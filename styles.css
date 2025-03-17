@@ -1,0 +1,434 @@
+/* General Styles */
+body {
+    margin: 0;
+       
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+nav ul {
+    display: flex;
+    background: linear-gradient(90deg, #30233d, #2575fc);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(82, 40, 40, 0.1);
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #2575fc;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+/* Home Page */
+.home {
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .main-sec {
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .right {
+    width: 400px;
+    height: 300px;
+    margin: 90px;
+    padding: 30px;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(155deg, #a7ceff, #bfc9cb);
+}
+
+.home .left {
+    padding: 30px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    row-gap: 20px;
+    flex-direction: column;
+    width: 552px;
+}
+
+.home .left .btn input {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #0043ff8c;
+}
+
+.home .main-sec .left .txt1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.home .right img {
+    width: 71vw;
+    filter: drop-shadow(20px 50px 25px #b3e3e3);
+}
+
+/* Location Section */
+.loc-sec {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.loc-sec .main-sec {
+    background-color: white;
+    display: flex;
+    column-gap: 20px;
+    border-radius: 10px;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: -70px;
+}
+
+/* Pickup and Return Date Inputs */
+.loc-sec .main-sec .pick {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.loc-sec .main-sec .pick label {
+    color: black;
+    font-weight: 700;
+}
+
+.loc-sec .main-sec .pick p {
+    border: 1px solid rgb(113, 160, 182);
+    padding: 6px 20px;
+    border-radius: 10px;
+}
+
+/* Input Fields */
+.loc-sec .main-sec .pick input[type="text"] {
+    padding: 8px 15px;
+    border: 1px solid rgb(113, 160, 182);
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+
+.loc-sec .main-sec .pick input[type="date"] {
+    padding: 8px 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.loc-sec .main-sec .pick input[type="button"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #0043ff8c;
+    color: white;
+    font-weight: bold;
+}
+
+/* Search Button as a Link */
+.loc-sec .main-sec .pick .search-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #0043ff8c;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/* Cars Section */
+#Cars {
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.cars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.car {
+    background: rgb(170, 143, 143);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.car:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.car img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.car h3 {
+    color: #000000;
+    margin: 10px 0;
+}
+
+.car p {
+    margin-bottom: 15px;
+    color: #000000;
+}
+/* Bikes Page Styles */
+#bikes {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+.bike-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.bike-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+}
+
+.bike-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.bike-card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.bike-card p {
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+/* Hero Section */
+.feedback-header {
+    background: url('images/feedback.jpeg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+}
+
+.feedback-header .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+}
+
+.feedback-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#contact-form {
+    background: #d1cccc;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 60%;
+    margin: auto;
+}
+
+#contact-form label {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* saved-feedback */
+.saved-feedback {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+}
+
+.saved-feedback {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(37, 34, 34, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Login Page */
+#login .login-background {
+    background: url('images/login-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login .login-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#login form input {
+    padding: 10px;
+    border: 2px solid #0072ff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#login form button {
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#login form button:hover {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.836);
+    color: white; 
+    padding: 15px;  
+    text-align: center;  
+    border-top: 5px solid rgb(3, 218, 247);  
+  }
+  
